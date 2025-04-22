@@ -8,13 +8,13 @@ dotenv.config();
 const app = express();
 const port = 3000;
 
-// Middleware
+// Middlewaree
 app.use(express.json());
 
-// Routes
+// Routess
 app.use('/api/auth', authRoute);
 
-// Connect to MongoDB
+// Connect to MongoDBB
 mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
